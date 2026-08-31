@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.Notion.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a cached Notion API client backed by the configured HTTP provider.
 /// </summary>
-public interface INotionOpenApiClientUtil: IDisposable, IAsyncDisposable
+public interface INotionOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the cached Notion client, creating it on the first call.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>The configured Notion client.</returns>
     ValueTask<NotionOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
