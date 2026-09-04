@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Notion.OpenApiClientUtil;
 
+/// <inheritdoc cref="INotionOpenApiClientUtil" />
 public sealed class NotionOpenApiClientUtil : INotionOpenApiClientUtil
 {
     private readonly AsyncSingleton<NotionOpenApiClient> _client;
