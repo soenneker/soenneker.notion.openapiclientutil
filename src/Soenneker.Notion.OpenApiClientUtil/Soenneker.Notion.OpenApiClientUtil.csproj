@@ -42,6 +42,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Notion.HttpClients" Version="4.0.104" />
-        <PackageReference Include="Soenneker.Notion.OpenApiClient" Version="4.0.99" />
+        <PackageReference Include="Soenneker.Notion.OpenApiClient" Version="4.0.100" />
     </ItemGroup>
 </Project>
